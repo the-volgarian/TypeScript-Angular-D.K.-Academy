@@ -1,13 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Myapp</title>
+  <title>Whishlist</title>
   <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha394Gn5384xq01aoWXA+058RXPxPg6fy4IWVh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous">
 </head>
-<body>
-  <app-root></app-root>
+
+<body class="m-b-1">
+  <h3 class="bg-primary p-a-1">My Whishlist</h3>
+  <table>
+    <tr>
+      <td>
+        <input class="form-control" />
+      </td>
+      <td>
+        <button class="btn btn-primary m-t-1">Add</button>
+      </td>
+    </tr>
+  </table>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Done</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1 000 000 USD</td><td>No</td></tr>
+      <tr><td>Ferrari 488</td><td>No</td></tr>
+      <tr><td>macBook Pro</td><td>Yes</td></tr>
+    </tbody>
+  </table>
+  
 </body>
 </html>
