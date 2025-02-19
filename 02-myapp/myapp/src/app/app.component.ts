@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from "@angular/core";
+import {Model} from "./model";
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  selector: "my-app",
+  templateUrl: "app.component.html"
 })
+
 export class AppComponent {
-  title = 'myapp';
+  model = new Model();
+  getName() {
+    return this.model.user;
+  }
 }
+
